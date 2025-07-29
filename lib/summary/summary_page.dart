@@ -1,0 +1,1 @@
+class SummaryPage extends State
