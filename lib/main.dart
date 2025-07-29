@@ -43,9 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       //body: ,
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.looks_one_rounded), label: "Обзор"),
-        BottomNavigationBarItem(icon: Icon(Icons.looks_two_rounded), label: "Тренировки"),
-        BottomNavigationBarItem(icon: Icon(Icons.three_g_mobiledata), label: "План"),
+        BottomNavigationBarItem(icon: Icon(Icons.accessibility_new_rounded), label: "Обзор"),
+        BottomNavigationBarItem(icon: Icon(Icons.alarm_on_outlined), label: "Тренировки"),
+        BottomNavigationBarItem(icon: Icon(Icons.assignment), label: "План"),
       ], currentIndex: _current_screen,
       onTap: (v){
         setState(() {

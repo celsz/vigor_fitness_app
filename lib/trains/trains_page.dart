@@ -9,7 +9,7 @@ class TrainingsPage extends StatelessWidget{
       appBar: AppBar(
         title: Text("Тренировки"),
       ),
-      body: ,
+      //body:
     );
   }
 }
