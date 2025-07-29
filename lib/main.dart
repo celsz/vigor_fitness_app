@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:vigor_fitness_app/reminds/reminds_page.dart';
+import 'package:vigor_fitness_app/summary/summary_page.dart';
+import 'package:vigor_fitness_app/trains/trains_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,17 +34,19 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _current_screen = 0;
+  final List<Widget> _screens = [
+    SummaryPage(),
+    TrainingsPage(),
+    RemindsPage()
+  ];
 
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      //body: ,
+
+      body: _screens[_current_screen],
       bottomNavigationBar: BottomNavigationBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.accessibility_new_rounded), label: "Обзор"),
         BottomNavigationBarItem(icon: Icon(Icons.alarm_on_outlined), label: "Тренировки"),

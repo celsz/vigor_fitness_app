@@ -31,7 +31,9 @@ dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^2.5.3
-
+  fl_chart: ^1.0.0
+  workmanager: ^0.6.0
+  flutter_local_notifications: ^19.3.0
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
