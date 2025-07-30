@@ -61,7 +61,7 @@ class _TrainingsPageState extends State<TrainingsPage>{
 
               final trains = snapshot.data ?? [];
               if(trains.isEmpty){
-                return const Center(child: Text("Нет упражнений"),);
+                return const Center(child: Text("Нет упражнений", style: TextStyle(fontSize: 25),),);
               }
               return ListView.builder(
                 itemCount: _len,

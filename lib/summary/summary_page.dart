@@ -7,16 +7,19 @@ class SummaryPage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: SizedBox(
-        width: 200,
-        height: 200,
-        child: PieChart(
-            PieChartData(
-                sections: [
-                  PieChartSectionData(title: "test1", value: 55),
-                  PieChartSectionData(title: "test2", value: 45),]
-            )
+    return Scaffold(
+      appBar: AppBar(title: Text("Обзор"),),
+      body: Center(
+        child: SizedBox(
+          width: 200,
+          height: 200,
+          child: PieChart(
+              PieChartData(
+                  sections: [
+                    PieChartSectionData(title: "test1", value: 55),
+                    PieChartSectionData(title: "test2", value: 45),]
+              )
+          ),
         ),
       ),
     );
