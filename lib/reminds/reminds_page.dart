@@ -7,7 +7,7 @@ class RemindsPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: UniversalDetails(header: 'Заблокированный контент', title: 'Упс! Данная функция недоступна!', description: 'Кажется, эта функция недоступна на вашей планете. Позже вы сможете рассмотреть список разрешённых планет', footer: TextButton(onPressed: (){}, child: Text("Список планет")),),
+      child: Center(child: Text("Нет напоминаний", style: TextStyle(fontSize: 25),),),
     );
 
   }
