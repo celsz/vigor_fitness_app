@@ -1,3 +1,4 @@
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:vigor_fitness_app/widgets/universal_details_page.dart';
 
@@ -7,7 +8,17 @@ class SummaryPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: UniversalDetails(header: 'Заблокированный контент', title: 'Упс! Данная функция недоступна!', description: 'Кажется, эта функция недоступна на вашей планете. Позже вы сможете рассмотреть список разрешённых планет', footer: TextButton(onPressed: (){}, child: Text("Список планет")),),
+      child: SizedBox(
+        width: 200,
+        height: 200,
+        child: PieChart(
+            PieChartData(
+                sections: [
+                  PieChartSectionData(title: "test1", value: 55),
+                  PieChartSectionData(title: "test2", value: 45),]
+            )
+        ),
+      ),
     );
 
   }

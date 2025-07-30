@@ -40,11 +40,11 @@ class _AddTrainingState extends State<AddTrainingPage>{
         child: Column(
           children: [
             Text("Введите название"),
-            TextField(controller: _nameController, decoration: const InputDecoration(labelText: ">>>"),),
+            TextField(controller: _nameController, decoration: const InputDecoration(labelText: ">>>"), ),
             Text("Введите группу мышц"),
             TextField(controller: _typeController, decoration: const InputDecoration(labelText: ">>>"),),
             Text("Введите количество повторов"),
-            TextField(controller: _repeatsController, decoration: const InputDecoration(labelText: ">>>"),),
+            TextField(controller: _repeatsController, decoration: const InputDecoration(labelText: ">>>"), keyboardType: TextInputType.number, inputFormatters: [FilteringTextInputFormatter.digitsOnly,],),
             ElevatedButton(
                 onPressed: _submit,
                 child: Text("Добавить"))
